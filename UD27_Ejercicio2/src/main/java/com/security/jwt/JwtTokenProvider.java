@@ -28,10 +28,10 @@ public class JwtTokenProvider {
 
 	private static final Logger logger = LoggerFactory.getLogger(JwtTokenProvider.class);
 
-	@Value("${UD27.ejercicio1.jwtSecret}")
+	@Value("${UD27.ejercicio2.jwtSecret}")
 	private String jwtSecret;
 
-	@Value("${UD27.ejercicio1.jwtExpirationMs}")
+	@Value("${UD27.ejercicio2.jwtExpirationMs}")
 	private int jwtExpirationMs;
 
 	public String generateJwtToken(Authentication authentication) {
