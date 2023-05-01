@@ -11,7 +11,8 @@ import com.dto.Usuario;
  * @author Palmira
  *
  */
-public interface IUsuarioDAO extends JpaRepository<Usuario, Long> {
+public interface IUsuarioDAO extends JpaRepository<Usuario, Integer> {
 
-	public Usuario findByUsername(String username);
+	Usuario findByUsername(String username);
+
 }

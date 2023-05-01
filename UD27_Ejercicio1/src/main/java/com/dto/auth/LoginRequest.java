@@ -1,61 +1,43 @@
 /**
  * 
  */
-package com.dto;
+package com.dto.auth;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 /**
  * @author Palmira
  *
  */
-@Entity
-@Table(name = "usuarios")
-public class Usuario {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+public class LoginRequest {
+
 	private String username;
 	private String password;
-	/**
-	 * @return the id
-	 */
-	public long getId() {
-		return id;
-	}
-	/**
-	 * @param id the id to set
-	 */
-	public void setId(long id) {
-		this.id = id;
-	}
+
 	/**
 	 * @return the username
 	 */
 	public String getUsername() {
 		return username;
 	}
+
 	/**
 	 * @param username the username to set
 	 */
 	public void setUsername(String username) {
 		this.username = username;
 	}
+
 	/**
 	 * @return the password
 	 */
 	public String getPassword() {
 		return password;
 	}
+
 	/**
 	 * @param password the password to set
 	 */
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
 
 }
